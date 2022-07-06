@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  p {
+    color: red;
+  }
+}
+
+.note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  strong{
+    margin: 0 1rem 0 0;
+  }
+}
