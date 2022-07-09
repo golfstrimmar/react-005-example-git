@@ -4,13 +4,18 @@ import {AlertContext} from '../context/alert/AlertContext'
 const Form = () => {
   const [value, setValue] = useState('')
   const alert = useContext(AlertContext)
-
-
-
   const submitHandler = event => {
     event.preventDefault()
-    alert.show(value, 'success')
+
+if (value.trim()) {
+  alert.show('note success', "success");
+  setValue('')
+}{
+  alert.show("need text");
+}
   }
+
+
   return (
     <form onSubmit={submitHandler}>
       <div className="form-group">
@@ -26,6 +31,8 @@ const Form = () => {
       </div>
     </form>
   );
+
+  
 };
 
 

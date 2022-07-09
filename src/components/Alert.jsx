@@ -15,7 +15,7 @@ const Alert = () => {
       role="alert"
       onClick={hide}
     >
-      <strong>Holy guacamole!</strong>
+      <strong></strong>
       {alert.text}
       <button type="button" className="close" aria-label="Close"></button>
     </div>
